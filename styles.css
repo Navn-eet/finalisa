@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Montserrat:wght@200&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E1E1E;
+    backdrop-filter: blur(10px);
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 23px;
+    color: white;
+    background-color: #1E1E1E;
+}
+
+.main_container{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main_div {
+    background-color: black;
+    border-radius: 10px;
+    max-width: 400px;
+    min-width: 300px;
+    padding: 20px;
+}
+
+
+
+
+
+
+.first_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;  
+}
+
+.logo{
+    background-color: #1E1E1E;
+    padding: 10px 20px  ;
+    border-radius: 30px;
+}
+
+.logo a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #1E1E1E;
+    text-decoration: none;
+}
+
+.second_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: -15px;
+}
+
+.icon-button button,
+.image-button button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-button button:focus,
+.image-button button:focus {
+    outline: none;
+}
+
+.icon-button button img,
+.image-button button img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.icon-button button img{
+    margin-left: 0px;
+}
+
+.sug-but #modal-button3{
+    background-color:#1E1E1E;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+
+
+.sug-but #modal-button3 #bt-txt{
+    color: white;
+    font-size: 15px;
+}
+
+.second_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 30px;
+    height: 10px;
+}
+
+.location i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: gray;
+}
+
+.datetime{
+    display: flex;
+    align-items: center;
+    background-color: #1E1E1E;
+    padding: 7px 25px;
+    border-radius: 30px;
+    height: 40px;
+}
+
+.search-box {
+    margin-top: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    margin-right: 10px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #1E1E1E;
+    color: aliceblue;
+}
+
+.search-box button {
+    background-color: #1E1E1E;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    margin-left: -50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-box button:focus {
+    outline: none;
+}
+
+.search-box button i {
+    font-size: 1.2rem;
+}
+
+.temp_box {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 30px;
+}
+
+.text_box p:first-child {
+    font-size: 2.3rem;
+    margin-bottom: 5px;
+    font-weight:900;
+    margin-top: auto;
+}
+
+.text_box p:nth-child(2){
+    font-size: 2rem;
+    font-weight:600;
+}
+
+.text_box p:last-child {
+    font-size:1rem;
+    font-weight: normal;
+}
+
+.weather-icon .fas {
+    font-size: 48px;
+}
+
+.weather-icon .fas.cloud {
+    color: #8795a1;
+}
+
+.weather-icon .fas.sun {
+    color: #ffb100;
+}
+
+.weather-icon .fas.rain {
+    color: #1565c0;
+}
+
+.weather-icon .fas {
+    font-size: 48px;
+}
+
+.weather-icon .fa-bolt {
+    color: #ffd700;
+}
+
+.weather-icon .fa-cloud-rain {
+    color: #87ceeb;
+}
+
+.weather-icon .fa-cloud-showers-heavy{
+    color: #778899;
+}
+
+.weather-icon .fa-snowflake {
+    color: #ffffff;
+}
+    
+.weather-icon .fa-sun {
+    color: #ffd700;
+}
+    
+.weather-icon .fa-cloud {
+    color: #87ceeb;
+}
+    
+.weather-icon .fa-wind {
+    color: #778899;
+}
+
+
+
+.panel {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1E1E1E;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+
+.panel button {
+    background-color: black;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.panel button:focus {
+    outline: none;
+}
+
+.panel button i {
+    font-size: 1.3rem;
+    margin-left: 5px;
+}
+
+.sug_box {
+    margin-top: 10px;
+    background-color: #1E1E1E;
+    padding: 10px;
+    border-radius: 30px;
+    max-width: 25rem;
+    height: 5rem;
+}
+
+.sug_box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.sug_box p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.5;
+    margin-top: 0px;
+}
+
+.copyright{
+    text-align: center;
+    color: grey;
+    display: block;
+}
+
+.copyright p{
+    margin-top: 5px;
+    margin-bottom: -15px;
+}
+
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* frosted glass effect */
+}
+
+  /* Modal Content */
+.modal-content {
+    background-color: #1E1E1E;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 24%; 
+    text-align: center;
+    position:relative;
+}
+
+  /* Close Button */
+.close-btn {
+    position: absolute;
+    top: 0;
+    right:16px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #778899;
+    cursor: pointer;
+}
+
+
+  /* Social Media Icons */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media i {
+    font-size: 24px;
+}
+
+.social-media .fab.fa-facebook-f {
+    color: #3b5998;
+}
+
+.social-media .fab.fa-linkedin-in {
+    color: #0077b5;
+}
+
+/* Modal2 */
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* frosted glass effect */
+}
+
+/* Modal Content2 */
+.modal2-content {
+    background-color: #1E1E1E;
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 24%; 
+    text-align: center;
+    position: relative;
+}
+
+/* Close Button2 */
+.close-btn2 {
+    position: absolute;
+    top: 0;
+    right:16px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #778899;
+    cursor: pointer;
+}
+
+
+
+/* Modal3 */
+.modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* frosted glass effect */
+}
+
+/* Modal Content3 */
+.modal3-content  {
+    background-color: #1E1E1E;
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 24%; 
+    text-align: center;
+    position: relative;
+}
+
+/* Close Button3 */
+.close-btn3 {
+    position: absolute;
+    top: 0;
+    right:16px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #778899;
+    cursor: pointer;
+}
+
+
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .main_container {
+    height: auto;
+    }
+    
+    .main_div {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 0;
+    }
+    
+    .first_nav {
+    flex-direction: row;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+    }
+
+    .second_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+    margin-bottom: 10px;
+    }
+    
+    .logo a {
+    font-size: 1.2rem;
+    }
+    
+    .icon-button button img {
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+    margin-right: 10px;
+    }
+    
+    .search-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    
+    .search-box input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+    
+    .search-box button {
+    margin-left: 0;
+    margin-bottom: 10px;
+    }
+    
+    .temp_box {
+    flex-direction: column;
+    }
+    
+    .text_box p:first-child {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    }
+    
+    .text_box p:last-child {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    }
+    
+    .panel {
+    flex-direction: column;
+    }
+    
+    .panel button {
+    margin-bottom: 10px;
+    }
+    
+    .sug_box {
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+    
+    .sug_box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    }
+    
+    .sug_box p {
+    font-size: 1rem;
+    }
+    }
+    
+    /* Styles for tablets */
+    @media (min-width: 768px) and (max-width: 1024px) {
+    .main_div {
+    max-width: 80%;
+    min-width: 80%;
+    }
+    }

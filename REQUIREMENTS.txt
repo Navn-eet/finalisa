@@ -1,0 +1,24 @@
+
+When the page is loaded or anytime:
+
+Check if there is any stored weather data in the local storage.
+If there is stored data, retrieve it and display it on the UI.
+Console log "Data Accessed from Local Storage".
+When the user searches for a city:
+a. Case I: If the city name is new:
+
+Fetch the weather data from the API.
+Store the fetched data in the database and local storage.
+Append the 7-day data and current data to the existing stored data in the database and local storage.
+Console log "Data Accessed from Internet".
+b. Case II: If the city name already exists:
+
+Retrieve the 7-day data from the database.
+Retrieve the current data from the local storage.
+Display the retrieved data on the UI.
+Console log "Data Accessed from Database" and "Data Accessed from Local Storage".
+c. Case III: If the wifi access is off:
+
+Display the stored or previously searched city's data from the database and local storage.
+If the user searches for a new city, show an alert message about no internet connection or a "failed to fetch" error.
+Console log "Data Accessed from Database" and "Data Accessed from Local Storage".

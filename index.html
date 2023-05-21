@@ -1,0 +1,127 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="apple-touch-icon" sizes="180x180" href="res/favicon_io/apple-touch-icon.png"> <!--Favicon ued for tab icon.-->
+            <link rel="icon" type="image/png" sizes="32x32" href="/res/favicon_io/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="/res/favicon_io/favicon-16x16.png">
+            <link rel="manifest" href="res/favicon_io/site.webmanifest">
+            <script src="https://kit.fontawesome.com/3d0749345c.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="styles.css" >
+            <title>ClimeMate</title>
+        </head>
+        <body>
+            <div class="main_container">
+                <div class="main_div">
+                    <div class="content">
+                        
+                        <div class="first_nav">
+                            <div class="logo">
+                                <a href="#" onclick="location.reload();">ClimeMate</a>
+                            </div>
+
+                            <!-- Sueestion Button -->
+                            <div class="sug-but">
+                                <button id="modal-button3"><P id="bt-txt">S</P></button>
+                            </div>
+                            <!-- Suggestion Modal -->
+                            <div id="modal3" class="modal3">
+                                <div class="modal3-content">
+                                        <span class="close-btn3">&times;</span>
+                                        <h2>Suggestion:</h2>
+                                        <p id="sugtext"></p>
+                                </div>
+                            </div>
+
+                            <!-- Fun button -->
+                            <div class="icon-button">
+                                <button id="modal-button2"><img src="res/alert-circle.svg" alt="Fun Button"></img></button>
+                            </div>
+                            <!-- fun-modal -->
+                            <div id="modal2" class="modal2">
+                                <div class="modal2-content">
+                                        <span class="close-btn2">&times;</span>
+                                        <h2>FunFact:</h2>
+                                        <p id="Funfact"></p>
+                                </div>
+                            </div>
+                            <!-- My bio -->
+                            <div class="image-button">
+                                <button id="modal-button"><img src="res/me.jpg" alt="Button Image"></button>
+                            </div>
+
+                            <!-- Modal -->
+                            <div id="modal" class="modal">
+                                <div class="modal-content">
+                                        <span class="close-btn">&times;</span>
+                                        <img src="res/me2.JPG" alt="Profile Picture" style="width: 230px; height: 230px; border-radius: 50%;">
+                                        <h2>Navneet Verma</h2>
+                                        <p>Learning student at Herald College Kathmandu exploring interests and passions.</p>
+                                        <div class="social-media">
+                                            <a href="https://www.instagram.com/nav.neet_22"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://www.linkedin.com/in/navneet-verma-987bb9257/"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+            
+                        <div class="second_nav">
+                            <div class="location">
+                                <i class="fa fa-location-dot"></i>
+                                <span id="loc">Gadsden</span>
+                            </div>
+                            <div class="datetime">
+                                <p>Day DD/MM/YYYY</p>
+                            </div>
+                        </div>
+                        
+                        <div class="search-box">
+                            <input type="text" placeholder="Search city...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+            
+                        <div class="temp_box">
+                            <div class="text_box">
+                                <p id="Title">Temperature </p>
+                                <p id="valueoftitle">...</p>
+                                <p>Weather Conditions</p>
+                            </div>
+                            <div class="weather-icon">
+                                <span class="fas"></span>
+                            </div>
+                        </div>
+            
+                        <div class="panel"> 
+                            <button id="pressureBtn">Pressure <i class="fa-solid fa-arrow-up"></i></button>
+                            <button id="humidityBtn">Humidity <i class="fa-solid fa-percent"></i></button>
+                            <button id="windBtn">Wind <i class="fa-solid fa-wind"></i></button>
+                        </div>
+            
+                        <div class="sug_box">
+                            <h2>Previous week </h2>
+                            <button id="openFileButton">Click to see previous week data.</button>
+                        </div>
+                        
+                        <div class="copyright">
+                            <p>©All rights reserved </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <script src="script.js"></script>
+            <script>
+                // Add event listener to the button
+                document.getElementById('openFileButton').addEventListener('click', function() {
+                  // Redirect the user to the PHP file
+                window.location.href = '7day.php';
+                });
+            </script>
+        </body>
+
+        </html>
